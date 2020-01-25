@@ -1,0 +1,174 @@
+*,*::before,*::after{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+@font-face{
+          font-family: PoppinsRegular;
+          src: url('./fonts/Poppins-Regular.ttf');
+}
+@font-face{
+          font-family: PoppinsBlack;
+          src: url('./fonts/Poppins-Black.ttf');
+}
+@font-face{
+          font-family: PoppinsLight;
+          src: url('./fonts/Poppins-Light.ttf');
+}
+a{
+          text-decoration: none;
+          color: black;
+}
+h1{
+          margin: 0;
+          text-decoration: none;
+}
+section{
+          width: 100vw;
+          height: 100vh;
+          max-width: 100%;
+          max-height: 100%;
+}
+#top-navbar{
+          position: fixed;
+          width:100%;
+          top:0;
+          margin-bottom: 100px;
+          background-color: rgb(216, 112, 147);
+}
+#top-navbar ul{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          list-style-type: none;
+          max-width: 100%;
+          height: 100px;
+          margin-top: 0;
+}
+.name{
+          margin-right: auto;
+          margin-left: 50px;
+          font-family: PoppinsRegular;
+}
+.name:hover{
+          cursor: pointer;
+}
+
+#top-navbar ul li {
+          font-family: PoppinsLight;
+          margin: 0;
+          margin-right: 20px;
+}
+#top-navbar ul li a{
+          margin: 0;
+          text-decoration: none;
+          margin-right: 20px;
+}
+#section-showcase{
+          background-image: radial-gradient(rgb(240,255,244),rgb(180,150,150));
+}
+.showcase{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 75%;
+          width: 50%;
+          margin: 100px auto;
+          margin-bottom: 0;
+          font-family: PoppinsBlack;
+          font-size: 35px;
+          text-align: center;
+}
+#section-home{
+          background-image: radial-gradient(rgba(43,55,96,1),rgba(11,16,35,1));
+}
+.home{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 75%;
+          width: 50%;
+          margin: 0 auto;
+          font-family: PoppinsBlack;
+          font-size: 15px;
+          text-align: center;
+          color: #fff;
+}
+.welcome{
+          margin-top: 150px;
+          font-size: 50px;
+          text-decoration: underline;
+}
+#home-intro{
+          font-size: 25px;
+          margin-top: 20px;
+}
+#home-more{
+          font-size: 20px;
+          margin-top: 50px;
+}
+#section-about{
+          background-image: radial-gradient(rgb(24,255,244),rgb(18,150,150));
+}
+.about{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 75%;
+          width: 50%;
+          margin: 0 auto;
+          font-family: PoppinsBlack;
+          font-size: 15px;
+          text-align: center;
+          color: #000;
+}
+#section-projects{
+          background-image: radial-gradient(rgb(240,25,244),rgb(180,10,150));
+}
+.projects{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 75%;
+          width: 50%;
+          margin: 0 auto;
+          font-family: PoppinsBlack;
+          font-size: 15px;
+          text-align: center;
+          color: #fff;
+}
+#section-blog{
+          background-image: radial-gradient(rgb(240,255,24),rgb(180,150,15));
+}
+.blog{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 75%;
+          width: 50%;
+          margin: 0 auto;
+          font-family: PoppinsBlack;
+          font-size: 15px;
+          text-align: center;
+          color: #000;
+}
+#section-contact{
+          background-image: radial-gradient(rgb(240,55,44),rgb(180,50,50));
+}
+.contact{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 75%;
+          width: 50%;
+          margin: 0 auto;
+          font-family: PoppinsBlack;
+          font-size: 15px;
+          text-align: center;
+          color: #fff;
+}
