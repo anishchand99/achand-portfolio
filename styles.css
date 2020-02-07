@@ -23,17 +23,22 @@ h1{
           margin: 0;
           text-decoration: none;
 }
+section::before {
+          content: "";
+          min-height: 100px;
+          display: block;
+}
 section{
           width: 100vw;
           height: 100vh;
           max-width: 100%;
           max-height: 100%;
+          scroll-snap-align: start;
 }
 #top-navbar{
           position: fixed;
           width:100%;
           top:0;
-          margin-bottom: 100px;
           background-color: rgb(216, 112, 147);
 }
 #top-navbar ul{
@@ -60,9 +65,13 @@ section{
           margin-right: 20px;
 }
 #top-navbar ul li a{
+          transition: all 0.3s ease 0s;
           margin: 0;
           text-decoration: none;
           margin-right: 20px;
+}
+#top-navbar ul li a:hover{
+          color: rgb(227, 252, 253);
 }
 #section-showcase{
           background-image: radial-gradient(rgb(240,255,244),rgb(180,150,150));
@@ -73,7 +82,7 @@ section{
           align-items: center;
           height: 75%;
           width: 50%;
-          margin: 100px auto;
+          margin: 0px auto;
           margin-bottom: 0;
           font-family: PoppinsBlack;
           font-size: 35px;
@@ -96,7 +105,6 @@ section{
           color: #fff;
 }
 .welcome{
-          margin-top: 150px;
           font-size: 50px;
           text-decoration: underline;
 }
@@ -109,39 +117,78 @@ section{
           margin-top: 50px;
 }
 #section-about{
-          background-image: radial-gradient(rgb(24,255,244),rgb(18,150,150));
+          background-image: radial-gradient(rgb(0, 255, 242),rgb(2, 95, 95));
 }
+
 .about{
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           height: 75%;
           width: 50%;
           margin: 0 auto;
-          font-family: PoppinsBlack;
+          font-family: PoppinsRegular;
           font-size: 15px;
-          text-align: center;
           color: #000;
 }
+.name{
+          color: rgb(180,50,50);
+}
+hr{
+          margin: 20px 0;
+          min-width: 100%;
+}
+.about-header{
+          margin-bottom: 15px;
+          font-size: 35px;
+          text-decoration: underline rgb(180,50,50);
+}
+table{
+          width: 100%;
+}
+th{
+          height: 23px;
+}
 #section-projects{
-          background-image: radial-gradient(rgb(240,25,244),rgb(180,10,150));
+          background-image: radial-gradient(rgb(153, 37, 248),rgb(180,10,150));
 }
 .projects{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 75%;
-          width: 50%;
-          margin: 0 auto;
-          font-family: PoppinsBlack;
+          font-family: PoppinsRegular;
           font-size: 15px;
-          text-align: center;
+          text-align: start;
           color: #fff;
+          padding: 20px;
+          box-sizing: border-box;
+}
+.project-header{
+          margin: 0px;
+}
+.grid-container{
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-gap: 20px;
+          padding: 25px;
+          text-align: center;
+          height: calc(100vh - 250px);
+          box-sizing: border-box;
+          overflow-y: auto;
+}
+#project-item{
+          border: 2px solid rgba(43,55,96,0.7);
+          border-radius: 5px;
+          background-color: rgba(43,55,96,0.2);
+          transition: all 0.3s ease-out 0s;
+}
+#project-item:hover{
+          transform: scale(1.01);
+          cursor: pointer;
+}
+#project-item img{
+          max-width: 200px;
 }
 #section-blog{
-          background-image: radial-gradient(rgb(240,255,24),rgb(180,150,15));
+          background-image: radial-gradient(rgb(240,255,24),rgb(134, 110, 2));
 }
 .blog{
           display: flex;
@@ -157,7 +204,7 @@ section{
           color: #000;
 }
 #section-contact{
-          background-image: radial-gradient(rgb(240,55,44),rgb(180,50,50));
+          background-image: radial-gradient(rgb(255, 75, 65),rgb(146, 36, 36));
 }
 .contact{
           display: flex;
