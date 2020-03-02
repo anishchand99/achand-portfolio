@@ -46,6 +46,7 @@ section{
           justify-content: center;
           align-items: center;
           box-sizing: border-box;
+          z-index: +5;
 }
 .nav-bar-links ul{
           display: flex;
